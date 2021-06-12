@@ -3,9 +3,6 @@ package guru.springframework.spring5jokesappv2.services;
 import guru.springframework.norris.chuck.ChuckNorrisQuotes;
 import org.springframework.stereotype.Service;
 
-/**
- * Created by jt on 1/22/21.
- */
 @Service
 public class JokeServiceImpl implements JokeService {
 
@@ -16,7 +13,7 @@ public class JokeServiceImpl implements JokeService {
     }
 
     @Override
-    public String getJoke() {
+    public String getJokes() {
         return chuckNorrisQuotes.getRandomQuote();
     }
 }
